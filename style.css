@@ -1,0 +1,331 @@
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    margin:0;
+    padding:0;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+    margin-left: 1rem;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    overflow: auto;
+    /* background-color: red; */
+}
+
+.sidebar {
+    /* background-color: blueviolet; */
+    background-color: black;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    position: fixed;
+    top: 3.5rem;
+    height: 100vh;
+    overflow: auto;
+}
+
+.main-content {
+    background-color: green;
+    flex: 1;
+    position: absolute;
+    left: 225px;
+    height: 100vh;
+    width: 100%;
+    margin: 0 1rem;
+}
+
+.main2 {
+    position: absolute;
+    z-index: 2;
+    background-color: #000;
+    position: absolute;
+    top: 7rem;
+    flex: 1;
+    height: 100vh;
+    width: 100%;
+    padding-top: 24px;
+    overflow: auto;
+}
+
+.sticky-nav {
+    background-color: #000;
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem 0 1rem;
+    z-index: 10;
+}
+
+.sticky-heading {
+    font-size: 1rem;
+    display: flex;
+    width: 175px;
+}
+
+.sticky-heading i{
+    height: 1.75rem;
+    width: 1.75rem;
+    margin: 1.25rem 0.5rem 1rem 1rem;
+    
+}
+
+.search {
+    width: 730px;
+    padding-top: 0.25rem;
+}
+
+.profile {
+    width: 225px;
+}
+
+.logo-text img {
+    height: 2.75rem;
+    width: 2.5rem;
+}
+
+.logo-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.logo-text div {
+    font-weight: 500;
+    font-size: 1.25rem;
+    letter-spacing: 0rem;
+    display: flex;
+}
+
+.logo-text div >sup {
+    font-size: 0.5rem;
+    margin-left: 0.25rem;
+} 
+
+.search-tool {
+    display: flex;
+}
+
+.search-bar {
+    width: 512px;
+    height: 40px;
+    border-radius: 25px 0 0 25px;
+    padding: 0 4px 0 16px;
+    margin-left: 2rem;
+    background-color: #000;
+    border: 1px solid #232323;
+}
+
+.search-bar::placeholder {
+    font-size: 1rem;
+}
+
+.search-bar:active {
+    border: 1px solid blue;
+}
+
+.magnify{
+    border-radius: 0 25px 25px 0;
+    background-color: #232323;
+    border: none;
+    width: 50px;
+    height: 42px;
+    padding: 1px 6px;
+}
+
+.magnify i{
+    color: white;
+    width: 50%;
+}
+
+.mic img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.profile img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+
+.sidebar-options {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.home, .shorts, .subs {
+    display: flex;
+    align-items: center;
+    opacity: 0.7;
+}
+
+.icon-img {
+    width: 2rem;
+    height: 2rem;
+    margin: 0.2rem 1rem 0.2rem 0rem;
+}
+
+.line {
+    /* height: 90%; */
+    width: 90%;
+    border-top: 1px solid white;
+    opacity: 0.7;
+    margin: 1.25rem 0;
+}
+
+.you-heading {
+    margin:1rem 0; 
+    opacity: 0.8;
+    font-size: 1.25rem;
+    margin-left: 0.2rem;
+}
+
+.you-heading i{
+    font-size: 0.75rem;
+}
+
+.you {
+    display: flex;
+    flex-direction: column;
+}
+
+.you-div {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    opacity: 0.8;
+}
+
+
+.you-div img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.boxy {
+    border-radius: 25px;
+}
+
+.boxy:hover {
+    background-color: #232323;
+}
+
+.secondary-nav {
+    position: sticky;
+    top: 3.5rem;
+    display: flex;
+    justify-content: baseline;
+    flex-wrap: wrap;
+    overflow: hidden;
+    z-index: 20;
+    height: 56px;
+    background-color: #000;
+}
+
+.badge {
+    width: fit-content;
+    height: 2rem;
+    padding: 0 0.75rem;
+    margin: 0.75rem 0.75rem 0.75rem 0;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    background-color: #232323;
+    color: white;
+    border: none;
+}
+
+.secondary-nav i{
+    margin-left: 1.5rem;
+    margin-top: 1.2rem;
+}
+
+.card-container {
+    height: 334px;
+    display: flex;
+    padding: 0 0.5rem;
+}
+
+.card > img{
+    height: 194px;
+    width: 345px;
+    border-radius: 10px;
+}
+
+.card {
+    background-color:#000;
+    height: 334px;
+    width: 345px;
+    border-radius: 10px;
+    margin-right: 2rem;
+}
+
+
+
+.card-body {
+    display: grid;
+    grid-column: 2;
+    grid-row: 3;
+    padding-right: 1.5rem;
+    padding-top: 0.75rem;
+    grid-gap: 5px;
+    font-weight: 500;
+}
+
+.channel-logo img {
+    height: 2.25rem;
+    width: 2.25rem;
+    border-radius: 50%;
+  
+}
+
+.channel-logo {
+    /* border-radius: 50%; */
+    grid-row: 1/4;
+    grid-column: 1/2;
+}
+
+.card-title {
+    grid-row: 1/2;
+    grid-column: 2/4;
+}
+
+.channel-name {
+    grid-row: 2/3;
+    grid-column: 2/4;
+}
+
+.views {
+    grid-row: 3/4;
+    grid-column: 2/4;
+}
+
+.card-text {
+    opacity: 0.8;
+}
+
+.card-text i {
+    font-size: 0.3rem;
+}
+
